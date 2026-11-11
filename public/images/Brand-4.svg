@@ -1,0 +1,12 @@
+<svg viewBox="0 0 195 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="earth-grad" x1="6" y1="6" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+  </defs>
+  <circle cx="22" cy="22" r="15" stroke="url(#earth-grad)" stroke-width="3" fill="none" />
+  <path d="M12 18C15 15 19 16 22 19C25 22 28 21 31 18" stroke="url(#earth-grad)" stroke-width="2.2" stroke-linecap="round" fill="none" />
+  <path d="M10 24C14 22 17 25 21 27C25 29 28 27 33 24" stroke="url(#earth-grad)" stroke-width="2.2" stroke-linecap="round" fill="none" />
+  <text x="46" y="28" fill="#132B2C" font-family="'Noto Sans', 'Inter', system-ui, sans-serif" font-size="20" font-weight="800" letter-spacing="0.5px">EARTH<tspan fill="#0284C7" font-size="15" font-weight="700" dx="3" dy="-2">2.0</tspan></text>
+</svg>

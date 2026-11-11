@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #2F6C6D;
+  --secondary: #132B2C;
+  --teal: #47A2A3;
+  --accent: #75C2C3;
+  --sage: #C2C375;
+  --text-muted: #6A6A6A;
+  --bg-light: #F6F6F6;
+}
+
+@layer base {
+  body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #6A6A6A;
+    background-color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Noto Sans', sans-serif;
+    color: #132B2C;
+    font-weight: 700;
+  }
+}
+
+/* Custom smooth transitions & animations */
+@keyframes floatSlow {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes pulseSubtle {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.04);
+    opacity: 0.85;
+  }
+}
+
+.animate-float {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 3.5s ease-in-out infinite;
+}
+
+/* Custom Elementor Badge styles with perfect vertical centering */
+.badge-subheading {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #47A2A3;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1;
+}
+
+.badge-subheading::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #47A2A3;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* Smooth custom scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #47A2A3;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2F6C6D;
+}
+
+/* Dedicated Hover Transition & Image Hover Effects with relaxed speed */
+.hover-lift {
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.35s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 32px -8px rgba(19, 43, 44, 0.11);
+}
+
+.image-hover-zoom {
+  overflow: hidden;
+  position: relative;
+}
+
+.image-hover-zoom img {
+  transition: transform 0.85s cubic-bezier(0.22, 1, 0.36, 1), filter 0.5s ease;
+}
+
+.image-hover-zoom:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.02);
+}
+
+.btn-hover-effect {
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease, background-color 0.3s ease;
+}
+
+.btn-hover-effect:hover {
+  transform: translateY(-2px);
+}
+
+.btn-hover-effect:active {
+  transform: translateY(0);
+}
+
+/* Continuous Auto-Rotating Marquee Ticker for Partner Logos */
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 26s linear infinite;
+  will-change: transform;
+}
+
