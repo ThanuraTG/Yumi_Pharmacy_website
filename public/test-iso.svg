@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" style="background:#1e4b54;">
+  <defs>
+    <pattern id="iso-cubes" width="60" height="103.923" patternUnits="userSpaceOnUse">
+      <g stroke="#62aab3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+        <!-- Diagonals down-right -->
+        <path d="M0,17.32 L60,51.96 M0,51.96 L60,86.60 M0,86.60 L60,121.24 M0,-17.32 L60,17.32" />
+        <!-- Diagonals up-right -->
+        <path d="M0,17.32 L60,-17.32 M0,51.96 L60,17.32 M0,86.60 L60,51.96 M0,121.24 L60,86.60" />
+        <!-- Vertical isometric cube inner stems -->
+        <path d="M30,34.64 L30,69.28 M0,86.60 L0,121.24 M60,86.60 L60,121.24 M0,-17.32 L0,17.32 M60,-17.32 L60,17.32" />
+      </g>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#iso-cubes)" />
+</svg>
