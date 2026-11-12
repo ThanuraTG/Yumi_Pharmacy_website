@@ -19,6 +19,9 @@ export default function AboutUs({ setCurrentPage, openPrescriptionModal }) {
         title="About Pharamedic"
         breadcrumbCurrent="About Us"
         setCurrentPage={setCurrentPage}
+        bgImage="/images/banner-about-us.jpg"
+        bgPosition="center right"
+        drawDesign="isometric-cubes"
       />
 
       {/* Main Story & Who We Are */}

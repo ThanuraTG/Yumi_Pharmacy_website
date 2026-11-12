@@ -29,11 +29,14 @@ export default function ContactUsPage({ setCurrentPage }) {
 
   return (
     <div className="w-full">
-      {/* Page Header / Breadcrumb matching reference design */}
+      {/* Page Header / Breadcrumb matching reference design with unique contact image & network draw design */}
       <PageHeaderBanner
         title="Contact Us"
         breadcrumbCurrent="Contact Us"
         setCurrentPage={setCurrentPage}
+        bgImage="/images/banner-contact.jpg"
+        bgPosition="center right"
+        drawDesign="connect-mesh"
       />
 
       {/* Main Content with Fade In Left & Fade In Right */}

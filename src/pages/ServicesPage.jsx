@@ -42,11 +42,14 @@ export default function ServicesPage({ setCurrentPage, openPrescriptionModal }) 
 
   return (
     <div className="w-full">
-      {/* Page Header / Breadcrumb matching reference design */}
+      {/* Page Header / Breadcrumb matching reference design with unique service image & pulse draw design */}
       <PageHeaderBanner
-        title="Services"
+        title="Our Healthcare Services"
         breadcrumbCurrent="Services"
         setCurrentPage={setCurrentPage}
+        bgImage="/images/banner-services.jpg"
+        bgPosition="center right"
+        drawDesign="medical-pulse"
       />
 
       {/* Services Grid with Fade In Up & Hover Transition */}
