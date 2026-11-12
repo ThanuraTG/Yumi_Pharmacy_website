@@ -34,8 +34,8 @@ export default function PageHeaderBanner({
     >
       {/* Clinical Deep Teal Gradient Overlay:
           Solid teal on left to ensure high text contrast,
-          transitioning to semi-transparent on the right to reveal the medical photo */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#173f47] via-[#1e4a53]/95 via-50% to-[#255762]/45 pointer-events-none" />
+          transitioning to soft transparency on the right to let the medical photo shine clearly */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#173f47] via-[#1b4851]/90 via-45% to-[#1b4851]/20 pointer-events-none" />
 
       {/* SVG Drawing Designs ("drow design") */}
       {drawDesign === 'isometric-cubes' && (
