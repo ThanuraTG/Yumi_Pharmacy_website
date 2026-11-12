@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { 
   Pill, Activity, ShieldCheck, Stethoscope, FileText, ShoppingBag, 
-  ArrowRight, CheckCircle2, Calendar, Clock, X 
+  CheckCircle2, X 
 } from 'lucide-react';
 import { servicesData } from '../data/mockData';
-import { FadeInDown, FadeInUp, ZoomIn } from '../components/AnimatedElements';
+import { FadeInUp, ZoomIn } from '../components/AnimatedElements';
 import PageHeaderBanner from '../components/PageHeaderBanner';
 
 export default function ServicesPage({ setCurrentPage, openPrescriptionModal }) {
@@ -47,7 +47,7 @@ export default function ServicesPage({ setCurrentPage, openPrescriptionModal }) 
         title="Our Healthcare Services"
         breadcrumbCurrent="Services"
         setCurrentPage={setCurrentPage}
-        bgImage="/images/banner-services.jpg"
+        bgImage="/images/banner-services.webp"
         bgPosition="center right"
         drawDesign="medical-pulse"
       />

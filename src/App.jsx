@@ -25,7 +25,7 @@ export default function App() {
       name: 'Multivitamin Complex 60 Caps',
       price: 18.50,
       quantity: 1,
-      image: '/images/shelves-with-medications-at-a-modern-pharmacy-shop.jpg'
+      image: '/images/shelves-with-medications-at-a-modern-pharmacy-shop.webp'
     }
   ]);
   const [toastMessage, setToastMessage] = useState('');
@@ -69,8 +69,6 @@ export default function App() {
   const clearCart = () => {
     setCartItems([]);
   };
-
-  const cartCount = cartItems.reduce((acc, item) => acc + item.quantity, 0);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });

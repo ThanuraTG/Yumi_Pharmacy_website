@@ -24,14 +24,12 @@ import { useState, useEffect, useRef } from 'react';
 import { pharmacistsData, servicesData, testimonialsData } from '../data/mockData';
 import {
   AnimatedCounter,
-  FadeIn,
   FadeInUp,
   FadeInDown,
   FadeInLeft,
   FadeInRight,
   ZoomIn,
-  ZoomInUp,
-  SlideInUp
+  ZoomInUp
 } from '../components/AnimatedElements';
 import { brandPartnersList } from '../components/PartnerLogos';
 
@@ -151,7 +149,7 @@ export default function Home({
       <section className="relative bg-gradient-to-br from-[#F5F9F9] via-white to-[#EEF6F6] pt-2 pb-20 lg:pt-0 lg:pb-28 border-b border-gray-100">
         {/* Background Decorative Plus watermark */}
         <div className="absolute top-12 left-8 opacity-10 pointer-events-none">
-          <img src="/images/plus-1.png" alt="" className="w-48 h-48 object-contain" />
+          <img src="/images/plus-1.webp" alt="" className="w-48 h-48 object-contain" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -203,7 +201,7 @@ export default function Home({
 
                 {/* Doctors Photo with Image Hover Effect */}
                 <img
-                  src="/images/male-and-female-doctors-in-white-coats-with-stetho-2022-12-16-15-24-39-utc2.png"
+                  src="/images/male-and-female-doctors-in-white-coats-with-stetho-2022-12-16-15-24-39-utc2.webp"
                   alt="Yumi Pharmaceuticals Healthcare Specialists"
                   className="w-full h-auto object-contain drop-shadow-2xl relative z-10 transition-transform duration-700 group-hover:scale-[1.03]"
                 />
@@ -319,7 +317,7 @@ export default function Home({
             <FadeInLeft className="lg:col-span-6 relative flex justify-center">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white w-full image-hover-zoom group">
                 <img
-                  src="/images/young-female-pharmacist-posing-while-working-in-a-pharmacy-e1697689073593.jpg"
+                  src="/images/young-female-pharmacist-posing-while-working-in-a-pharmacy-e1697689073593.webp"
                   alt="Young female pharmacist posing while working in a pharmacy"
                   className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -418,7 +416,7 @@ export default function Home({
       </section>
 
       {/* 5. CTA PROMO BANNER with Zoom In Up */}
-      <section className="relative py-10 bg-cover bg-center overflow-hidden" style={{ backgroundImage: "url('/images/shelves-with-medications-at-a-modern-pharmacy-shop.jpg')" }}>
+      <section className="relative py-10 bg-cover bg-center overflow-hidden" style={{ backgroundImage: "url('/images/shelves-with-medications-at-a-modern-pharmacy-shop.webp')" }}>
         {/* Dark Teal Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-pharmacy-secondary/95 via-pharmacy-primary/90 to-pharmacy-secondary/95"></div>
 
@@ -498,7 +496,7 @@ export default function Home({
       </section>
 
       {/* 7. THE BEST PHARMACY STORE BANNER with Fade In Up */}
-      <section className="relative py-10 bg-cover bg-center" style={{ backgroundImage: "url('/images/empty-pharmacy-store-full-with-pharmaceutical-product-and-treatment-on-shelves.jpg')" }}>
+      <section className="relative py-10 bg-cover bg-center" style={{ backgroundImage: "url('/images/empty-pharmacy-store-full-with-pharmaceutical-product-and-treatment-on-shelves.webp')" }}>
         <div className="absolute inset-0 bg-gradient-to-r from-pharmacy-primary/95 to-pharmacy-secondary/90"></div>
         <FadeInUp className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center justify-center space-y-5">
           <span className="text-pharmacy-accent font-extrabold text-xs uppercase tracking-widest block">
@@ -512,7 +510,10 @@ export default function Home({
           </p>
           <div className="pt-2">
             <button
-              onClick={() => setCurrentPage('#')}
+              onClick={() => {
+                setCurrentPage('shop');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
               className="bg-white hover:bg-pharmacy-teal hover:text-white text-pharmacy-secondary font-bold px-8 py-3.5 rounded-xl text-sm shadow-xl transition-all duration-300 btn-hover-effect"
             >
               Shop Now
@@ -587,7 +588,7 @@ export default function Home({
             <FadeInRight delay={0.15} className="lg:col-span-5 relative flex justify-center lg:justify-end">
               <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white w-full image-hover-zoom group">
                 <img
-                  src="/images/a-pharmacy-expert-is-standing-in-the-drug-store-and-smiling-at-the-camera-.jpg"
+                  src="/images/a-pharmacy-expert-is-standing-in-the-drug-store-and-smiling-at-the-camera-.webp"
                   alt="A pharmacy expert is standing in the drug store and smiling at the camera"
                   className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -616,7 +617,7 @@ export default function Home({
         <div
           className="absolute inset-0 bg-cover bg-center pointer-events-none brightness-[0.98] contrast-[0.7]"
           style={{
-            backgroundImage: "url('/images/membership-section-bg.png')"
+            backgroundImage: "url('/images/membership-section-bg.webp')"
           }}
         />
         {/* Soft subtle tint overlay to gently tone down lighting */}
@@ -838,7 +839,13 @@ export default function Home({
                     </div>
                   </div>
 
-                  <div className="p-6 pt-0 border-t border-gray-100 mt-2 flex items-center justify-center text-xs font-bold text-pharmacy-teal">
+                  <div
+                    onClick={() => {
+                      setCurrentPage('pharmacists');
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }}
+                    className="p-6 pt-0 border-t border-gray-100 mt-2 flex items-center justify-center text-xs font-bold text-pharmacy-teal cursor-pointer hover:text-pharmacy-primary transition-colors"
+                  >
                     <span className="group-hover:translate-x-1 transition-transform duration-300">View Specialist Profile →</span>
                   </div>
                 </div>
@@ -944,7 +951,7 @@ export default function Home({
                           alt={t.name}
                           className="w-10 h-10 rounded-full object-cover shrink-0 ring-1 ring-gray-100"
                           onError={(e) => {
-                            e.currentTarget.src = '/images/Testimonials-1.jpg';
+                            e.currentTarget.src = '/images/Testimonials-1.webp';
                           }}
                         />
                         <h5 className="text-sm font-bold text-pharmacy-secondary">

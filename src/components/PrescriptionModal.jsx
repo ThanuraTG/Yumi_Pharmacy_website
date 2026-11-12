@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, UploadCloud, CheckCircle2, FileText, AlertCircle, Shield } from 'lucide-react';
+import { X, UploadCloud, CheckCircle2, FileText, Shield } from 'lucide-react';
 import { ZoomIn } from './AnimatedElements';
 
 export default function PrescriptionModal({ isOpen, onClose }) {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, X, ArrowRight, Pill, Activity, ShieldCheck, Stethoscope } from 'lucide-react';
+import { Search, X, ArrowRight } from 'lucide-react';
 import { productsData, servicesData, blogPostsData } from '../data/mockData';
 import { ZoomIn } from './AnimatedElements';
 

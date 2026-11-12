@@ -40,7 +40,7 @@ export default function Footer({ setCurrentPage }) {
         <div className="bg-gradient-to-r from-pharmacy-primary via-[#245859] to-[#163334] rounded-2xl py-6 px-6 sm:px-10 relative overflow-hidden shadow-xl border border-white/10 hover-lift">
           {/* Subtle watermark */}
           <div className="absolute right-0 top-0 opacity-10 pointer-events-none transform translate-x-6 -translate-y-6">
-            <img src="/images/plus-1.png" alt="" className="w-48 h-48 object-contain" />
+            <img src="/images/plus-1.webp" alt="" className="w-48 h-48 object-contain" />
           </div>
 
           <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-5">
@@ -91,20 +91,13 @@ export default function Footer({ setCurrentPage }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-10 gap-8 lg:gap-10">
         {/* Col 1: Brand & Operating Hours (40%) */}
         <div className="lg:col-span-4 space-y-3.5 text-left">
-          <div className="flex items-center space-x-2.5 cursor-pointer" onClick={() => handleNav('home')}>
-            <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-pharmacy-primary to-pharmacy-teal flex items-center justify-center text-white shadow-sm shrink-0">
-              <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 4v16m-8-8h16" />
-              </svg>
-            </div>
-            <div className="flex items-center space-x-1.5">
-              <span className="text-lg font-black tracking-tight text-white leading-none">
-                Yumi<span className="text-pharmacy-teal">.</span>
-              </span>
-              <span className="text-sm font-bold text-gray-200 tracking-tight leading-none">
-                Pharmaceuticals
-              </span>
-            </div>
+          {/* Official Yumi Pharmaceuticals Brand Logo */}
+          <div className="cursor-pointer inline-flex items-center group" onClick={() => handleNav('home')}>
+            <img
+              src="/images/yumi-logo-dark-bg.webp"
+              alt="Yumi Pharmaceuticals"
+              className="h-9 sm:h-10 w-auto object-contain group-hover:scale-[1.02] transition-transform duration-200"
+            />
           </div>
           <p className="text-gray-400 text-xs leading-relaxed max-w-sm">
             Delivering verified pharmaceuticals, clinical consultations, and health wellness for your family.

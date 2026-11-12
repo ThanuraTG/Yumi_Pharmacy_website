@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { MapPin, Mail, Phone, Clock, Send, CheckCircle2, MessageCircle } from 'lucide-react';
-import { FadeInDown, FadeInLeft, FadeInRight } from '../components/AnimatedElements';
+import { MapPin, Mail, Phone, Clock, Send, CheckCircle2 } from 'lucide-react';
+import { FadeInLeft, FadeInRight } from '../components/AnimatedElements';
 import PageHeaderBanner from '../components/PageHeaderBanner';
 
 export default function ContactUsPage({ setCurrentPage }) {
@@ -34,7 +34,7 @@ export default function ContactUsPage({ setCurrentPage }) {
         title="Contact Us"
         breadcrumbCurrent="Contact Us"
         setCurrentPage={setCurrentPage}
-        bgImage="/images/banner-contact.jpg"
+        bgImage="/images/banner-contact.webp"
         bgPosition="center right"
         drawDesign="connect-mesh"
       />

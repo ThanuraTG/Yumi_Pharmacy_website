@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { CheckCircle2, ShieldCheck, Zap, Sparkles, ArrowRight, Heart } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 import { membershipTiers } from '../data/mockData';
-import { FadeInDown, FadeInUp, ZoomInUp, FadeIn } from '../components/AnimatedElements';
+import { FadeInDown, FadeInUp, ZoomInUp } from '../components/AnimatedElements';
 
 export default function MembershipPage({ setCurrentPage }) {
   const [joinedPlan, setJoinedPlan] = useState(null);

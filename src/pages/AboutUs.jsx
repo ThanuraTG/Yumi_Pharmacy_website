@@ -1,9 +1,8 @@
 import React from 'react';
-import { CheckCircle2, Award, ShieldCheck, Clock, Users, ArrowRight, HeartPulse, Building2 } from 'lucide-react';
+import { Award, ShieldCheck, Clock, HeartPulse, Building2 } from 'lucide-react';
 import { pharmacistsData } from '../data/mockData';
 import {
   AnimatedCounter,
-  FadeInDown,
   FadeInUp,
   FadeInLeft,
   FadeInRight,
@@ -19,7 +18,7 @@ export default function AboutUs({ setCurrentPage, openPrescriptionModal }) {
         title="About Pharamedic"
         breadcrumbCurrent="About Us"
         setCurrentPage={setCurrentPage}
-        bgImage="/images/banner-about-us.jpg"
+        bgImage="/images/banner-about-us.webp"
         bgPosition="center right"
         drawDesign="isometric-cubes"
       />
@@ -32,7 +31,7 @@ export default function AboutUs({ setCurrentPage, openPrescriptionModal }) {
             <FadeInLeft className="lg:col-span-6 relative flex justify-center">
               <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white w-full image-hover-zoom group">
                 <img
-                  src="/images/portrait-of-a-handsome-pharmacist-working-in-a-pharmacy.jpg"
+                  src="/images/portrait-of-a-handsome-pharmacist-working-in-a-pharmacy.webp"
                   alt="Pharmacist at work"
                   className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
                 />
