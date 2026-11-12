@@ -74,7 +74,7 @@ export default function Navbar({
             <img
               src="/images/yumi-logo.webp"
               alt="Yumi Pharmaceuticals"
-              className="h-10 sm:h-11 md:h-12 w-auto object-contain group-hover:scale-[1.02] transition-transform duration-200"
+              className="h-8 sm:h-10 md:h-10 w-auto object-contain group-hover:scale-[1.02] transition-transform duration-200"
             />
           </div>
 
