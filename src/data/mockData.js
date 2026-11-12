@@ -54,7 +54,7 @@ export const pharmacistsData = [
     id: 'vivienne-lewis',
     name: 'Vivienne Lewis',
     role: 'Chief Pharmacist & Clinical Specialist',
-    image: '/images/Pharmacist-6.jpg',
+    image: '/images/Pharmacist-6.webp',
     experience: '12+ Years',
     specialty: 'Pharmacotherapy & Patient Counseling',
     bio: 'PharmD graduate with a passion for holistic health monitoring and personalized prescription management.',
@@ -64,7 +64,7 @@ export const pharmacistsData = [
     id: 'william-painter',
     name: 'William Painter',
     role: 'Senior Pharmacy Consultant',
-    image: '/images/Pharmacist-1.jpg',
+    image: '/images/Pharmacist-1.webp',
     experience: '15+ Years',
     specialty: 'Immunization & Chronic Disease Care',
     bio: 'Dedicated to community health wellness, diabetes counseling, and preventive health screenings.',
@@ -74,7 +74,7 @@ export const pharmacistsData = [
     id: 'sarah-barnes',
     name: 'Sarah Barnes',
     role: 'Health & Wellness Pharmacist',
-    image: '/images/Pharmacist-5.jpg',
+    image: '/images/Pharmacist-5.webp',
     experience: '8+ Years',
     specialty: 'Pediatric & Nutritional Support',
     bio: 'Specialist in child health formulation, nutritional supplementation, and specialized compounding.',
@@ -87,7 +87,7 @@ export const testimonialsData = [
     id: 1,
     name: 'Anita D. Costin',
     role: 'Manager',
-    image: '/images/Testimonials-1.jpg',
+    image: '/images/Testimonials-1.webp',
     rating: 5,
     quote: 'Yumi Pharmaceuticals has completely transformed how our family manages routine healthcare. The pharmacists always take time to review dosages and ensure everything is clear and safe.'
   },
@@ -95,7 +95,7 @@ export const testimonialsData = [
     id: 2,
     name: 'Wilbur N. Shore',
     role: 'Accounting',
-    image: '/images/Testimonials-2.jpg',
+    image: '/images/Testimonials-2.webp',
     rating: 5,
     quote: 'The online prescription upload and prompt doorstep delivery service have saved me so much time. Truly exceptional customer service, reliability, and genuine medications every single time.'
   },
@@ -103,7 +103,7 @@ export const testimonialsData = [
     id: 3,
     name: 'Robert J. Adams',
     role: 'CEO of Dragonfly',
-    image: '/images/Testimonials-3.jpg',
+    image: '/images/Testimonials-3.webp',
     rating: 5,
     quote: 'Professional, compassionate, and trustworthy. Their on-site diagnostic screening and pharmacist consultation provided clear answers and peace of mind about my cardiovascular health.'
   },
@@ -111,7 +111,7 @@ export const testimonialsData = [
     id: 4,
     name: 'Elena Rodriguez',
     role: 'School Educator',
-    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&h=200&q=80',
+    image: '/images/Testimonials-4.webp',
     rating: 5,
     quote: 'Managing chronic asthma for my kids used to be stressful. Their automated refill system ensures we never run out of essential inhalers, and delivery is always speedy and discreet.'
   },
@@ -119,7 +119,7 @@ export const testimonialsData = [
     id: 5,
     name: 'David S. Chen',
     role: 'Software Architect',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&h=200&q=80',
+    image: '/images/Testimonials-5.webp',
     rating: 5,
     quote: 'The pharmacists here are genuinely knowledgeable. When I was uncertain about potential drug interactions with my allergy meds, they provided a thorough and reassuring consultation.'
   },
@@ -127,7 +127,7 @@ export const testimonialsData = [
     id: 6,
     name: 'Sophia M. Patel',
     role: 'Clinical Nutritionist',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&h=200&q=80',
+    image: '/images/Testimonials-6.webp',
     rating: 5,
     quote: 'Exceptional selection of wellness supplements and certified vitamins. I frequently recommend this pharmacy to my clients for their verified formulations and high quality standards.'
   },
@@ -135,7 +135,7 @@ export const testimonialsData = [
     id: 7,
     name: 'Marcus Vance',
     role: 'Fitness Coach',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&h=200&q=80',
+    image: '/images/Testimonials-7.webp',
     rating: 5,
     quote: 'From routine blood pressure checks to recovery hydration essentials, the care and prompt attention I receive here are unmatched. A dependable cornerstone for our community.'
   },
@@ -143,7 +143,7 @@ export const testimonialsData = [
     id: 8,
     name: 'Clara Henderson',
     role: 'Interior Designer',
-    image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&h=200&q=80',
+    image: '/images/Testimonials-8.webp',
     rating: 5,
     quote: 'Ordering online was completely effortless. The package was delivered with temperature-controlled protection within hours. Outstanding dedication to patient health and convenience.'
   }
@@ -158,7 +158,7 @@ export const productsData = [
     originalPrice: 24.00,
     rating: 4.9,
     badge: 'Sale',
-    image: '/images/shelves-with-medications-at-a-modern-pharmacy-shop.jpg'
+    image: '/images/shelves-with-medications-at-a-modern-pharmacy-shop.webp'
   },
   {
     id: 'prod-2',
@@ -168,7 +168,7 @@ export const productsData = [
     originalPrice: 38.00,
     rating: 5.0,
     badge: 'Best Seller',
-    image: '/images/3439405_61802-1-e1697375308450.jpg'
+    image: '/images/3439405_61802-1-e1697375308450.webp'
   },
   {
     id: 'prod-3',
@@ -178,7 +178,7 @@ export const productsData = [
     originalPrice: 16.99,
     rating: 4.8,
     badge: null,
-    image: '/images/flat-lay-medical-elements-composition-1.jpg'
+    image: '/images/flat-lay-medical-elements-composition-1.webp'
   },
   {
     id: 'prod-4',
@@ -188,7 +188,7 @@ export const productsData = [
     originalPrice: 28.50,
     rating: 4.7,
     badge: 'Popular',
-    image: '/images/empty-pharmacy-store-full-with-pharmaceutical-product-and-treatment-on-shelves.jpg'
+    image: '/images/empty-pharmacy-store-full-with-pharmaceutical-product-and-treatment-on-shelves.webp'
   },
   {
     id: 'prod-5',
@@ -198,7 +198,7 @@ export const productsData = [
     originalPrice: 65.00,
     rating: 4.9,
     badge: 'Top Rated',
-    image: '/images/portrait-of-a-handsome-pharmacist-working-in-a-pharmacy.jpg'
+    image: '/images/portrait-of-a-handsome-pharmacist-working-in-a-pharmacy.webp'
   },
   {
     id: 'prod-6',
@@ -208,7 +208,7 @@ export const productsData = [
     originalPrice: 31.00,
     rating: 4.9,
     badge: null,
-    image: '/images/pharmacist-checking-a-medicine-in-pharmacy.jpg'
+    image: '/images/pharmacist-checking-a-medicine-in-pharmacy.webp'
   }
 ];
 
@@ -221,7 +221,7 @@ export const blogPostsData = [
     author: 'Vivienne Lewis',
     comments: 4,
     excerpt: 'Convenience, privacy, and accessibility are changing how patients order essential medications. Discover what to watch out for when ordering online.',
-    image: '/images/shelves-with-medications-at-a-modern-pharmacy-shop.jpg'
+    image: '/images/shelves-with-medications-at-a-modern-pharmacy-shop.webp'
   },
   {
     id: 'understanding-drug-interactions',
@@ -231,7 +231,7 @@ export const blogPostsData = [
     author: 'William Painter',
     comments: 2,
     excerpt: 'Many everyday vitamins and dietary supplements can interfere with prescription medications. Learn which combinations need careful monitoring.',
-    image: '/images/flat-lay-medical-elements-composition-1.jpg'
+    image: '/images/flat-lay-medical-elements-composition-1.webp'
   },
   {
     id: 'seasonal-immunity-guidelines',
@@ -241,7 +241,7 @@ export const blogPostsData = [
     author: 'Sarah Barnes',
     comments: 5,
     excerpt: 'Simple daily choices in hydration, sleep, vitamin D levels, and gut health can fortify your body defenses during change of seasons.',
-    image: '/images/portrait-of-a-handsome-pharmacist-working-in-a-pharmacy.jpg'
+    image: '/images/portrait-of-a-handsome-pharmacist-working-in-a-pharmacy.webp'
   }
 ];
 

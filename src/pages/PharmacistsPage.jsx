@@ -1,7 +1,7 @@
 import React from 'react';
 import { pharmacistsData } from '../data/mockData';
-import { Award, Mail, Phone, Facebook, Twitter, Linkedin, Instagram, CheckCircle2 } from 'lucide-react';
-import { FadeInDown, FadeInUp, ZoomInUp } from '../components/AnimatedElements';
+import { Award, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { FadeInDown, FadeInUp } from '../components/AnimatedElements';
 
 export default function PharmacistsPage({ setCurrentPage, openPrescriptionModal }) {
   return (

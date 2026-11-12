@@ -66,24 +66,16 @@ export default function Navbar({
       {/* Main Navigation */}
       <nav className="bg-white/95 backdrop-blur-md transition-all border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-          {/* Logo (Part 2 subline removed completely, clean & balanced) */}
+          {/* Official Yumi Pharmaceuticals Brand Logo */}
           <div
             onClick={() => handleNavClick('home')}
-            className="cursor-pointer flex items-center space-x-3 group shrink-0"
+            className="cursor-pointer flex items-center group shrink-0"
           >
-            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-tr from-pharmacy-primary via-[#2E6B6C] to-pharmacy-teal flex items-center justify-center text-white shadow-md shadow-pharmacy-teal/25 group-hover:scale-105 transition-all duration-300 shrink-0">
-              <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 4v16m-8-8h16" />
-              </svg>
-            </div>
-            <div className="flex items-center space-x-1.5">
-              <span className="text-xl sm:text-2xl font-black tracking-tight text-pharmacy-secondary group-hover:text-pharmacy-primary transition-colors leading-none">
-                Yumi<span className="text-pharmacy-teal">.</span>
-              </span>
-              <span className="text-base sm:text-lg font-extrabold text-pharmacy-primary tracking-tight leading-none">
-                Pharmaceuticals
-              </span>
-            </div>
+            <img
+              src="/images/yumi-logo.webp"
+              alt="Yumi Pharmaceuticals"
+              className="h-10 sm:h-11 md:h-12 w-auto object-contain group-hover:scale-[1.02] transition-transform duration-200"
+            />
           </div>
 
           {/* Desktop Nav Links & Search (Part 3 buttons removed, perfectly balanced) */}

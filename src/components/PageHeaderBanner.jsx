@@ -18,7 +18,7 @@ export default function PageHeaderBanner({
   title = 'About Pharamedic',
   breadcrumbCurrent = 'About Us',
   setCurrentPage,
-  bgImage = '/images/blue-medical-banner.jpg',
+  bgImage = '/images/blue-medical-banner.webp',
   bgPosition = 'center right',
   drawDesign = 'isometric-cubes',
   badgeText = null,
