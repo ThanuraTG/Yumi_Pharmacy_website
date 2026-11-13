@@ -1,14 +1,13 @@
-import React from 'react';
-import { Award, ShieldCheck, Clock, HeartPulse, Building2 } from 'lucide-react';
-import { pharmacistsData } from '../data/mockData';
+import { Award, Building2, Clock, HeartPulse, ShieldCheck } from 'lucide-react';
 import {
   AnimatedCounter,
-  FadeInUp,
   FadeInLeft,
   FadeInRight,
+  FadeInUp,
   ZoomIn
 } from '../components/AnimatedElements';
 import PageHeaderBanner from '../components/PageHeaderBanner';
+import { pharmacistsData } from '../data/mockData';
 
 export default function AboutUs({ setCurrentPage, openPrescriptionModal }) {
   return (
@@ -61,7 +60,7 @@ export default function AboutUs({ setCurrentPage, openPrescriptionModal }) {
                 Yumi Pharmaceuticals (PVT) Ltd was established with a singular vision: to bridge the gap between doctor diagnosis and patient recovery through compassionate, expert pharmaceutical guidance.
               </p>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Whether you need everyday generic medications, complex chronic disease monitoring, or preventative vaccinations, our registered pharmacists ensure every prescription is checked for safety, affordability, and optimal therapeutic efficacy.
+                Whether you need everyday generic medications, or complex chronic disease monitoring, our registered pharmacists ensure every prescription is checked for safety, affordability, and optimal therapeutic efficacy.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">

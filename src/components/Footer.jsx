@@ -192,7 +192,7 @@ export default function Footer({ setCurrentPage }) {
             <li className="flex items-center space-x-2.5 text-gray-400">
               <Phone size={14} className="text-pharmacy-teal shrink-0" />
               <a href="tel:0770207988" className="hover:text-white font-semibold text-white">
-                (077) 0207988
+                (077) 020 7988
               </a>
             </li>
           </ul>
