@@ -5,7 +5,7 @@ export const servicesData = [
     description: 'Affordable and certified high-quality generic pharmaceuticals equivalent to branded formulations.',
     iconName: 'Pill',
     badge: 'Popular',
-    detail: 'We provide an extensive range of FDA-approved generic medicines that offer the exact same therapeutic efficacy, safety profile, and dosage strength as brand-name drugs at up to 70% lower prices.'
+    detail: 'We provide an extensive range of NMRA-approved generic medicines that offer the exact same therapeutic efficacy, safety profile, and dosage strength as brand-name drugs at up to 70% lower prices.'
   },
   {
     id: 'health-check',
@@ -15,14 +15,14 @@ export const servicesData = [
     badge: 'Routine',
     detail: 'Early detection saves lives. Drop in anytime without long waits for blood pressure evaluation, diabetes screening, lipid profiling, and body mass index analysis conducted by certified clinical staff.'
   },
-  {
-    id: 'vaccination',
-    title: 'Vaccination',
-    description: 'Seasonal influenza, COVID-19, travel vaccines, and routine immunization administered safely.',
-    iconName: 'ShieldCheck',
-    badge: 'Certified',
-    detail: 'Our certified pharmacist immunizers deliver safe, gentle, and documented vaccinations for both adults and children, including complete travel immunization consultations.'
-  },
+  // {
+  //   id: 'vaccination',
+  //   title: 'Vaccination',
+  //   description: 'Seasonal influenza, COVID-19, travel vaccines, and routine immunization administered safely.',
+  //   iconName: 'ShieldCheck',
+  //   badge: 'Certified',
+  //   detail: 'Our certified pharmacist immunizers deliver safe, gentle, and documented vaccinations for both adults and children, including complete travel immunization consultations.'
+  // },
   {
     id: 'medicine-consultation',
     title: 'Medicine Consultation',

@@ -34,8 +34,8 @@ export default function Navbar({
 
   return (
     <header className="w-full sticky top-0 z-50 shadow-sm bg-white animate-fade-in-down">
-      {/* Top Header Bar */}
-      <div className="bg-pharmacy-secondary text-gray-300 text-xs py-2 px-4 sm:px-6 lg:px-8 border-b border-pharmacy-primary/30">
+      {/* Top Header Bar (Hidden in mobile view, visible on md: and larger screens) */}
+      <div className="hidden md:block bg-pharmacy-secondary text-gray-300 text-xs py-2 px-4 sm:px-6 lg:px-8 border-b border-pharmacy-primary/30">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
           {/* (1) Left Side: ONLY Social Media Icons with Hover Transition */}
           <div className="flex items-center space-x-3.5 text-white/80">
@@ -51,13 +51,13 @@ export default function Navbar({
               <Clock size={13} className="text-pharmacy-teal" />
               <span>Mon - Sat: 08:00 AM - 09:00 PM</span>
             </div>
-            <a href="mailto:info@yourdomain.com" className="flex items-center space-x-1.5 hover:text-white transition-colors">
+            <a href="mailto:yumipharmaceuticals@gmail.com" className="flex items-center space-x-1.5 hover:text-white transition-colors">
               <Mail size={13} className="text-pharmacy-teal" />
-              <span>info@yourdomain.com</span>
+              <span>yumipharmaceuticals@gmail.com</span>
             </a>
-            <a href="tel:5559876543" className="flex items-center space-x-1.5 font-medium text-white hover:text-pharmacy-teal transition-colors">
+            <a href="tel:0770207988" className="flex items-center space-x-1.5 font-medium text-white hover:text-pharmacy-teal transition-colors">
               <Phone size={13} className="text-pharmacy-teal" />
-              <span>(555) 987-6543</span>
+              <span>(077) 020 7988</span>
             </a>
           </div>
         </div>
